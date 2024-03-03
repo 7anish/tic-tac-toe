@@ -73,4 +73,64 @@ body{
     & #hash{
         width: 25rem;
     }
+    & .container{
+        width: 24rem;
+        height: 24rem;
+        display: flex;
+        flex-wrap: wrap;
+        & .box{
+            width: 8rem;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: var(--purple);
+        }
+
+        & .one{
+            border-width: 0 0.2rem 0.2rem 0; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .two{
+            border-width: 0 0.2rem 0.2rem 0.2rem; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .three{
+            border-width: 0 0 0.2rem 0.2rem; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .four{
+            border-width: 0.2rem 0.2rem 0.2rem 0; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .five{
+            border: 0.2rem solid var(--green);
+        }
+        & .six{
+            border-width: 0.2rem 0 0.2rem 0.2rem; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .seven{
+            border-width: 0.2rem 0.2rem 0 0; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .eight{
+            border-width: 0.2rem 0.2rem 0 0.2rem; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+        & .nine{
+            border-width: 0.2rem 0 0 0.2rem; 
+            border-color:  var(--green);
+            border-style: solid;
+        }
+    }
+    
 }
