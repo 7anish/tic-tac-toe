@@ -70,9 +70,6 @@ body{
         color: var(--purple);
     }
 
-    & #hash{
-        width: 25rem;
-    }
     & .container{
         width: 24rem;
         height: 24rem;
