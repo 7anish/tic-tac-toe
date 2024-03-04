@@ -65,6 +65,7 @@ body{
         color: var(--purple);
     }
 
+
     & .target{
         border: 0;
         border-radius: 4px;
@@ -76,6 +77,7 @@ body{
     & #hash{
         width: 25rem;
     }
+
     & .container{
         width: 24rem;
         height: 24rem;
@@ -139,6 +141,7 @@ body{
 }
 
 
+
 .btn{
     font-family: "Press Start 2P", system-ui;
     margin-top: 4rem;
@@ -154,3 +157,4 @@ body{
         transform: translateY(-2%);
     }
 }
+
