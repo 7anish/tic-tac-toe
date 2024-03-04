@@ -1,5 +1,5 @@
 let a = 'x'
-let count = 0 ;
+let count = 0;
 
 const changesing = () => {
     if (a === 'x') {
@@ -24,81 +24,34 @@ const box = document.querySelectorAll('.box');
 const reset = () => {
     box.forEach((i) => i.innerText = '')
     arr = ['i0', 'i1', 'i2', 'i3', 'i4', 'i5', 'i6', 'i7', 'i8']
-    a ='o'
+    a = 'o'
     count = 0
 }
 
 const winner = (n) => {
-    if (arr[0] == arr[1] && arr[1] == arr[2]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-
-    else if (arr[3] == arr[4] && arr[4] == arr[5]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-    else if (arr[6] == arr[7] && arr[7] == arr[8]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-    else if (arr[0] == arr[3] && arr[3] == arr[6]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-    else if (arr[1] == arr[4] && arr[4] == arr[7]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-
-
-    else if (arr[2] == arr[5] && arr[5] == arr[8]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-
-    else if (arr[0] === arr[4] && arr[4] === arr[8]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset();
-    }
-
-    else if (arr[2] == arr[4] && arr[4] == arr[6]) {
-        console.log('winner')
-        setTimeout(() => {
-            alert(`${n} is winner`)
-        }, 100)
-        reset()
-    }
-
-    else if( count === 9 ){
-        setTimeout(() => {
-            alert('Match draw')
-        }, 100)
-        reset()
+    switch (true) {
+        case arr[0] == arr[1] && arr[1] == arr[2]:
+        case arr[3] == arr[4] && arr[4] == arr[5]:
+        case arr[6] == arr[7] && arr[7] == arr[8]:
+        case arr[0] == arr[3] && arr[3] == arr[6]:
+        case arr[1] == arr[4] && arr[4] == arr[7]:
+        case arr[2] == arr[5] && arr[5] == arr[8]:
+        case arr[0] == arr[4] && arr[4] == arr[8]:
+        case arr[2] == arr[4] && arr[4] == arr[6]:
+            console.log('winner')
+            setTimeout(() => {
+                alert(`${n} is winner`)
+            }, 100)
+            reset();
+            break;
+        case count === 9:
+            setTimeout(() => {
+                alert('Match draw')
+            }, 100)
+            reset()
+        default:
     }
 }
-
 
 
 box.forEach((i, index) => {
@@ -108,7 +61,7 @@ box.forEach((i, index) => {
         else {
             i.innerText = a
             arr[index] = a
-            count ++
+            count++
             winner(a);
             changesing();
         }
