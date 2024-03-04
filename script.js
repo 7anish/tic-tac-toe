@@ -50,6 +50,7 @@ const winner = (n) => {
             }, 100)
             reset()
         default:
+            break;
     }
 }
 

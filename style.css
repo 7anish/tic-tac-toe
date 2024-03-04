@@ -56,22 +56,19 @@ body{
         padding: 0.5rem;
     }
 
-    & .active{    
-        & .active-text{
-            color: var(--green);
-        }
-    }
-    & .inactive{
+    & .active-text{
         color: var(--purple);
     }
-
-
     & .target{
         border: 0;
         border-radius: 4px;
         padding: 0.5rem;
         border-bottom: 3px solid var(--green);
         animation: target .5s infinite; 
+
+        & span {
+            color: var(--green);
+        }
     }
 
     & #hash{
