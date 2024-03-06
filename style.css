@@ -29,7 +29,7 @@ body{
 /* =============================================== Main Styling =============================================== */
 .content{
     width: 90vw;
-    height: 100vh;
+    height: 100%;
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -155,3 +155,29 @@ body{
     }
 }
 
+@media (width <= 770px) {
+    html{
+        font-size: 80%;
+    }
+}
+@media (width <= 428px) {
+    html{
+        font-size: 43.75%;
+    }
+    .content{
+        gap: 3rem;
+        & h1{
+            padding: 1.5rem 1rem;
+        }
+    }
+}
+@media (width <= 380px) {
+    html{
+        font-size: 37%;
+    }
+}
+@media (width <= 325px) {
+    html{
+        font-size: 30%;
+    }
+}

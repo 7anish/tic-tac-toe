@@ -40,13 +40,13 @@ const winner = (n) => {
         case arr[2] == arr[4] && arr[4] == arr[6]:
             console.log('winner')
             setTimeout(() => {
-                alert(`${n} is winner`)
+                alert(`${n} is WINNER!`)
             }, 100)
             reset();
             break;
         case count === 9:
             setTimeout(() => {
-                alert('Match draw')
+                alert('Match DRAW!')
             }, 100)
             reset()
         default:
